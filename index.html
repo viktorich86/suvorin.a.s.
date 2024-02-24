@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Главная  книгоиздатель Суворин"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="книгоиздатель Суворин Алексей Сергеевич из России"/>
+    <meta property="og:url" content="#"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" media="screen,projection" href="css/ui.totop.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	 <script src="js/script.js"></script>
+	 
+   <script type="text/javascript">
+   	
+   var lastResFind=""; // последний удачный результат
+var copy_page=""; // копия страницы в ихсодном виде
+function TrimStr(s) {
+     s = s.replace( /^\s+/gi, '');
+  return s.replace( /\s+$/gi, '');
+}
+function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+  var obj = window.document.getElementById(inputId);
+  var inputSearch;
+ 
+  if (obj) {
+    inputSearch = TrimStr(obj.value);//обрезаем пробелы
+  } else  {
+    alert("Введенная фраза не найдена");
+    return;
+  }
+  if (inputSearch =="") {
+    alert("Вы ничего не ввели");
+    return;
+  }
+ 
+  if(document.body.innerHTML.indexOf(inputSearch)=="-1")
+  alert("Ничего не найдено, проверьте правильность ввода!");
+ 
+  if(copy_page.length>0)
+        document.body.innerHTML=copy_page;
+  else copy_page=document.body.innerHTML;
+
+ 
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+inputSearch+"/gi"),"<a name="+inputSearch+" style='background:red'>"+inputSearch+"</a>"); //Заменяем найденный текст ссылками с якорем;
+  lastResFind=inputSearch; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+  window.location = '#'+inputSearch;//перемещаем скрол к последнему найденному совпадению
+ }
+   </script>
+
+
+	
+
+
+
+		
+	
+
+	<title>Суворин А.С.</title>
+
+</head>
+<body >
+
+	
+
+	<ul class="fixed__socials">
+            <li><a href="#" target="_blank"><i class="fa-brands fa-vk"></i></a></li>
+ 			<li><a href="#" target="_blank"><i class="fa-brands fa-youtube" ></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+ 			<li><a href="#" target="_blank"><i class="fa-brands fa-twitter" ></i></a></li>
+     </ul>
+   
+</p>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-10">
+					<div class="header_menu">
+					  <div class="logo">
+					  	<img src="img/logo.jpg" alt="">
+					  </div>
+					  <ul class="header_button">
+					  	<li><a href="#history" >Биография</a></li>
+
+					  	<li><a href="#video_suvorin"  >Видео</a></li>
+					  	<li><a href="#foto"  >Открытки</a></li>
+					  	<li><a href="#biblioteka"  >Книги</a></li>
+					  	<li><a href="#personal_biblioteka"  >Библиотека</a></li>
+					  	
+					  </ul>
+
+                          </div>
+					  	    </div>
+					  
+					  </div>
+
+					  <div class=" col-md-2">
+					  	    <div class="search-form">
+					  	    	<form action="search">
+					  	    		<input type="text" name="" id="inputSearch"
+					  	    		value="" size="15" maxlength="50"
+					  	    		 >
+					  	    		<input type="button" onclick="javascript: FindOnPage('inputSearch'); return false;" target="_blank" value="Искать">
+					  	    		
+					  	    		
+					  	    	</form>
+					  	    	</div>
+
+
+					  	   	 
+					  	   
+					  
+					  
+					  	
+					  
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div class="main_color">
+			<div class="container ">
+				<div class="row">
+					<div class="col-12 col-md-12">
+						<div class="main_foto">
+						<h1 class="main_title">
+							<span>Суворин Алексей Сергеевич</span></h1>
+							<p>Крупнеиший книгоиздатель, журналист и библиофил <br> конца XIX начало XX вв.</p>
+							
+						
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="history">
+			<a name="history"></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-12">
+						<div class="about_suvorin">	
+                                
+                             <h1>Суворин Алексей Сергеевич (1834-1912)</h1>
+                             
+                               	
+                               <p>
+                               	<img src="img/Suvorin_AS.jpg" alt="Суворин" align="left" vspace="35" hspace="35"; >
+
+                               	Алексей Суворин родился 11 (23) сентября 1834 года в селе Коршеве Бобровского уезда Воронежской губернии (ныне Бобровский район Воронежской области).Суворин учился в воронежском Михайловском кадетском корпусе (окончил в 1851) и в специальных классах Дворянского полка (ныне Константиновское военное училище), откуда выпущен в сапёры. Вскоре он вышел в отставку, выдержал экзамен на звание учителя уездного училища и отдался педагогической деятельности, сначала в Боброве, затем в Воронеже.В 1863 году Суворин переселился в Петербург, где писал обозрение журналов в «Русском инвалиде» (за подписью А. И-н) и стал секретарём и ближайшим сотрудником «Санкт-Петербургских ведомостей»Широкую известность Суворин приобрёл во второй половине 1860-х годов, когда он под псевдонимом Незнакомец стал писать в «Санкт-Петербургские ведомости» воскресный фельетон («Недельные очерки и картинки»). 
+                               	
+                               	<img src="img/Suvorin_AS_2.jpeg"  alt="Суворин" align="right" vspace="35" hspace="35">
+                               	
+                                Крупное значение в газетном деле этому фельетону впервые дал блестящий талант Суворина, соединявший в себе тонкое остроумие с искренностью чувства и уменьем к каждому предмету подойти со стороны его общественного значения. Суворин расширил рамки воскресного фельетона, введя в него обсуждение самых различных сторон современной государственной, общественной и литературной жизни.
+                               Это были лучшие опыты русского политического памфлета, не стеснявшиеся нападать очень резко на отдельных лиц, но вместе с тем только на общественную сторону их деятельности.
+                               В конце 1875 года Суворин стал писать воскресные фельетоны в «Биржевых ведомостях» В. А. Полетики, а в начале 1876 года приобрёл вместе с В. И. Лихачёвым газету «Новое время». <br>
+                                <b> М. Е. Салтыков-Щедрин и Н. А. Некрасов </b>М. Е. Салтыков-Щедрин и Н. А. Некрасов дали свои произведения для первых номеров. Лично Суворин, впрочем, не может быть отождествлён с его газетой. Литературная его манера осталась, в общих чертах, та же, какая была у него в «Санкт-Петербургских ведомостях»; она в основном была свободна от грубого задевания личности, от вульгарных издевательств (в отличие от ведущего критика «Нового времени» В. П. Буренина). Публицистическая деятельность Суворина с приобретением «Нового времени» в общем ослабела. От воскресного фельетона он себя освободил и только изредка вёл рубрику «Маленькие письма». <img src="img/ShubinskiSuvorin.jpg" alt="" align="left" vspace="35" hspace="35">
+                                В 1901 году Суворин принял участие в создании монархической организации «Русское собрание», первое заседание которой прошло в помещении редакции «Нового времени». Он вошёл в совет Русского собрания, но со временем отошёл от активной деятельности.
+                                Алексей Сергеевич Суворин во время лечения во Франкфурте-на-Майне. Осень 1911.Последние годы Суворин усердно занимался театром, к которому издавна был близок как театральный рецензент, и стал во главе литературно-артистического кружка (Малый театр). 
+                                С газетой «Новое время» сотрудничал <b>А. П.Чехов</b>. Суворин увидел талант Чехова и сумел сделать его известным на всю страну. Суворин был близок к Антону Павловичу Чехову, сохранилась их обширная переписка. Как драматург, Суворин известен пользовавшейся большим успехом драмой из жизни актёров «Татьяна Репина» (отд. СПб., 1889, 3 изд. СПб., 1899). «Татьяна Репина» навеяна реальным событием — самоубийством молодой актрисы Евлалии Кадминой в Харькове в 1881 году.С 1872 г. <img src="img/mogila.jpg" alt="" align="right" vspace="35" hspace="35"> Суворин издавал весьма распространенный «Русский календарь». Почти одновременно с приобретением «Нового времени» Суворин основал книжный магазин и издательскую фирму, занимающую одно из первых мест в русской книжной торговле. С 1895 года издает популярное справочное издание «Вся Россия». В ряду его многочисленных изданий особенного сочувствия заслуживает серия «Дешёвая библиотека» (образцом для неё послужили нем. «Universal-Biblothek» Реклама и франц. «Bibliothèque Nationale»), выпустившая уже несколько сот книжек классических произведений русских и иностранных писателей. Ср. «Библиограф», 1893 г.  До 1914 года издательство Суворина выпускало подробный адресный справочник «Весь Петербург». Справочник содержал как информацию по самым разным учреждениям и улицам, так и поимённый список квартиросъёмщиков — с адресами, званиями и профессиями, телефонами.  Скончался Суворин 11 (24) августа 1912 года в Царском Селе, на даче вблизи Баболовского дворца.Похоронен на Никольсклом кладбище Адександро-Невской лавры.
+                                 </p>
+						</div>
+
+			</div>
+					</div>
+				</div>
+			</div>
+		<div class="video_suvorin">
+			<a name="video_suvorin"></a>
+			<div class="container">
+				<div class="row">
+					<h1 class="video_title text-center" >Оценка современников</h1>
+					<div class="col-12 col-md-6">
+						
+						<div class="video_1">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/gBXkVGHVNCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						</div>
+						<div class="col-12 col-md-6 ">
+							<div class="video_2">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/-USfQlc-kB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+						</div>
+					
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div class="foto">
+			<a name="foto"></a>
+			<div class="container">
+				<div class="row">
+				<div class=" col-12 col-md-12">
+                    
+					<h1 class="foto_title text-center">Открытки издательства Суворина</h1>
+					<p class="foto_text">Изд. А. Суворина или Изд. Контрагентства А. С. Суворина… или же: Изд. Товарищества Контрагент печати (сокращенно: Изд. Т-ства КП), как поначалу он (Суворин) свое контрагентство называл и с 1906 года по 1909 год издавал открытки именно под такими шапками. Предпринятое же А.С.Сувориным массовое издание видовых открыток по огромному количеству больших и малых городов и городков, сел, слобод, местечек и железнодорожных станций было поистине грандиозным. Несколько десятков тысяч видов общим тиражом во многие сотни тысяч открыток. Поистине неисчерпаемая залежь исторической фотодокументалистики.»<br>
+					Имея практически монопольное право на торговлю книгами, открытками и прочей печатной продукцией на железнодорожных вокзалах и станциях, А.С.Суворин с 1906 года стал также издавать и своеобразные сувенирные открытки со схемами разных железных дорог России, украшая их микровидами городов, через которые та или иная дорога проходила. В цветном и черно-белом вариантах они охотно раскупались пассажирами в память о поездках по той или иной дороге.
+                    Серии черно-белых открыток издавались и переиздавались А.С. Сувориным почти ежегодно — как отдельными открытками, так и буклетными книжечками по 15 открыток, из которых они могли легко отрываться…»</p>
+
+  <div class="column">
+    <img src="img/9.jpg " width="410" onclick="openModal();currentSlide(1)" class= "hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/10.jpg" width="410" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/11.jpg" width="410" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/9.jpg" width="410" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+
+   <div class="column">
+    <img src="img/9.jpg" width="410" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+
+   <div class="column">
+    <img src="img/9.jpg" width="410" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="img/9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="img/10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="img/11.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="img/11.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="img/11.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="img/11.jpg" style="width:100%">
+    </div>
+
+
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+   
+    <div class="column">
+      <img class="demo" src="img/9.jpg" onclick="currentSlide(1)" alt="номерная серия, года выпуска 1912-1917гг, серию отпечатали — «Фототипия Шерер и Набгольц и Ко Москва»">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/10.jpg" onclick="currentSlide(2)" alt="номерная серия, года выпуска 1912-1917гг, серию отпечатали — «Фототипия Шерер и Набгольц и Ко Москва»">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/11.jpg" onclick="currentSlide(3)" alt="номерная серия, года выпуска 1912-1917гг, серию отпечатали — «Фототипия Шерер и Набгольц и Ко Москва»">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/9.jpg" onclick="currentSlide(4)" alt="номерная серия, года выпуска 1912-1917гг, серию отпечатали — «Фототипия Шерер и Набгольц и Ко Москва»">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/9.jpg" onclick="currentSlide(5)" alt="номерная серия, года выпуска 1912-1917гг, серию отпечатали — «Фототипия Шерер и Набгольц и Ко Москва»">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/9.jpg" onclick="currentSlide(6)" alt="номерная серия, года выпуска 1912-1917гг, серию отпечатали — «Фототипия Шерер и Набгольц и Ко Москва»">
+    </div>
+  </div>
+</div> 
+</div>
+  
+
+
+	 				
+                   
+					
+				</div>
+			</div>
+		</div>
+
+
+	<div class="biblioteka">
+		<a name="biblioteka"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<h1 class="biblioteka_title text-center">Книги издательства Суворина</h1>
+					<p class="biblioteka_text">За 40 лет издательской деятельности А.С.Суворин выпустил около 1500 книг универсальной тематики общим тиражом в 6,5 млн. экземпляров. И на закате своей жизни А.С.Суворин вполне мог поздолить себе написать: Как издатель я оставлю прекрасное имя. Да, прямо так и говорю. Ни одного пятна. Я издал много, я никого не эксплуатировал, никого не жал, напротив, делал все, что может делать хороший хозяин относительно своих сотрудников и рабочих. <…> Газета дает до 600 тысяч в год, а у меня кроме долгов ничего нет, то есть нет денег. Есть огромное дело, которое выросло до миллионного оборота, но я до сих пор не знал никакого развлечения, никаких наслаждений, кроме труда самого каторжного. Расчетлив я никогда не был, на деньги никогда не смотрел как на вещь, стоящую внимания.</p>
+					<div class="gall">
+
+				<img src="img/biblioteka_8.jpg" tabindex="0"  border="5"/>
+					
+				     
+				<img src="img/biblioteka_7.jpg" tabindex="0" border="5"/>   
+				<img src="img/biblioteka_1.jpg" tabindex="0" border="5" />
+				<img src="img/biblioteka_2.jpg" tabindex="0" border="5"/>
+				<img src="img/biblioteka_3.jpg" tabindex="0" border="5"/>
+				<img src="img/biblioteka_4.jpg" tabindex="0" border="5"/>
+				<img src="img/biblioteka_5.jpg" tabindex="0" border="5"/>
+				<img src="img/biblioteka_6.jpg" tabindex="0" border="5"/> 
+
+</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="personal_biblioteka">
+		<a name="personal_biblioteka"></a>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-12 ">
+
+					<h1 class="personal_biblioteka_title text-center">Личная Библиотека</h1>
+                      
+                      	
+					
+					
+		                   
+					
+
+					
+					
+
+					<p class="text_personal_biblioteka ">Менее известен А. С. Суворин как библиофил, хотя он был обладателем одного из крупнейших русских частных книжных.Первые книжные приобретения А. С. Суворин сделал, вероятно, в начале 50-х годов.Суворин сосредоточил внимание в основном на иностранной беллетристике, критике и истории, рецензии на которые помещал в «Вестнике Европы». Этот раздел своей библиотеки он усердно комплектовал в течение всей жизни, и даже за несколько месяцев до смерти, по словам Либровича, он часто заходил в иностранный отдел магазина Вольфа, внимательно просматривал все новинки по искусству и мемуарную литературу.За 50 с лишним лет Суворин собрал богатейшую библиотеку, насчитывавшую до 40 тысяч томов, посвященных в основном гу-манитарным наукам15. О бережном, истинно библиофильском от¬ношении к своему собранию свидетельствует и большое количество превосходных переплетов работы лучших столичных мастеров, и специально сделанный еще в конце XIX века экслибрис, пред¬ставляющий собой четырехгранный книжный ярлык с типографски отпечатанным текстом: «Из библиотеки Алексея Сергеевича Суворина Шкаф... № ...» .
+					<img class="catalog_foto "src="img/catalog_1.jpg" width="350" height="400" alt="">
+					  <a class="catalog_button" href="https://primo.nlr.ru/primo-explore/fulldisplay?docid=07NLR_LMS005268940&context=L&vid=07NLR_VU1&lang=ru_RU&search_scope=default_scope&adaptor=Local%20Search%20Engine&tab=default_tab&query=any,contains,%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%20%D1%81%D1%83%D0%B2%D0%BE%D1%80%D0%B8%D0%BD">Подробнее</a>
+					
+                     Кроме того до нас дошли его каталоги Русские книги библиотеки А. С. Суворина, судя по каталогу, представляли наиболее значительную (в количественном отношении) часть собрания и составляли около 12000 названий или свы¬ше 20000 томов. <img class="catalog_foto "src="img/catalog_2.jpg" width="350" height="400" alt="">
+					  <a class="catalog_button" href="https://primo.nlr.ru/primo-explore/fulldisplay?docid=07NLR_LMS005244802&context=L&vid=07NLR_VU1&lang=ru_RU&search_scope=default_scope&adaptor=Local%20Search%20Engine&tab=default_tab&query=lsr24,contains,%D1%81%D1%83%D0%B2%D0%BE%D1%80%D0%B8%D0%BD%20%D0%B7%D0%B0%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5%D0%B9&offset=0">Подробнее</a>
+                      Хронологические рамки коллекции — от XVII do начала XX века. Преобладали издания второй половины XIX века, то есть времени наиболее интенсивного комплектования библиоте¬ки. Собрание разбито составителем на 17 разделов.Каталог иностранной части библиотеки А. С. Суворина вклю¬чает около 8500 названий альбомов, книг, брошюр и журналов на нескольких европейских языках. Предпочтение отдано литературе на французском и немецком, которыми свободно владел Суворин. Хронологически собрание охватывает три столетия (от 1600 до 1905 г.),а по содержанию разбивается на 16 разделов. За редким исключением они соответствуют разделам «Каталога русских книг библиотеки А. С. Суворина».</p>
+					
+					   
+						
+
+                         
+                          
+					
+
+						
+						
+
+						
+						
+						
+					
+
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="footer_background">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-8">
+
+                   <div class="footer">
+                   	<img class="iks" src="img/iks.jpg" width="350" height="200" alt="">
+                   	<p class="text_1" >&copy; 2022 Тимофеев Александр</p>
+                   </div>
+                    <div class="form">
+                   <form method="post" action="#" enctype="multipart/form-data">
+	<input type="text" name="email" size="30" placeholder="Введите Ваш E-mail" />
+	<input type="submit"   name="submit" value="подписаться " />
+</form>
+</div> 
+</div>        
+             <div class="col-12 col-md-4">
+          <div class="footer_link ">
+         <ul class="link_button">
+					  	<li><a href="#">Российская Национальная Библиотека</a></li>
+
+					  	<li><a href="#" target="_blank" >Российская Государственная Библиотека</a></li>
+					  	<li><a href="#" target="_blank" >НЭБ</a></li>
+					  	<li><a href="#" target="_blank" >ГИМ</a></li>
+					  	<li><a href="#" target="_blank" >Президентская Библиотека</a></li>
+					  	
+					  </ul>
+					  </div>
+          </div>
+          
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+<script src="js/easing.js" type="text/javascript"></script>
+
+<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+ 
+$().UItoTop({ easingType: 'easeOutQuart' });
+ 
+});
+</script>
+
+ 
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+	
+	
+
+</body>
+</html>
